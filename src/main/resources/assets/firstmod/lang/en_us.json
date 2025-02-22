@@ -1,5 +1,7 @@
 {
   "item.firstmod.alexandrite": "Alexandrite Gem",
   "item.firstmod.raw_alexandrite": "Row Alexandrite",
-  "item.firstmod.profiterole": "Profiterole"
+  "item.firstmod.profiterole": "Profiterole",
+  "block.firstmod.alexandrite_block": "Block of Alexandrite",
+  "block.firstmod.raw_alexandrite_block": "Raw Block of Alexandrite"
 }
