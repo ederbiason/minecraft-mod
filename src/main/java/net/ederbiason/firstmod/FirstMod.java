@@ -2,6 +2,7 @@ package net.ederbiason.firstmod;
 
 import com.mojang.logging.LogUtils;
 import net.ederbiason.firstmod.block.ModBlocks;
+import net.ederbiason.firstmod.item.ModCreativeModTabs;
 import net.ederbiason.firstmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -31,6 +32,8 @@ public class FirstMod {
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
