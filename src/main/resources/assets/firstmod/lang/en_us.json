@@ -6,6 +6,9 @@
   "block.firstmod.alexandrite_block": "Block of Alexandrite",
   "block.firstmod.raw_alexandrite_block": "Raw Block of Alexandrite",
 
+  "block.firstmod.alexandrite_ore": "Alexandrite Ore",
+  "block.firstmod.alexandrite_deepslate_ore": "Alexandrite Deepslate Ore",
+
   "creativetab.firstmod.alexandrite_items": "Alexandrite Items",
   "creativetab.firstmod.alexandrite_blocks": "Alexandrite Blocks"
 }
