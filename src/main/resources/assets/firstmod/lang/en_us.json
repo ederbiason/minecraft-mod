@@ -3,6 +3,7 @@
   "item.firstmod.raw_alexandrite": "Raw Alexandrite",
 
   "item.firstmod.profiterole": "Profiterole",
+  "item.firstmod.kohlrabi": "Kohlrabi",
   "item.firstmod.chisel": "Chisel",
 
   "block.firstmod.alexandrite_block": "Block of Alexandrite",
@@ -14,5 +15,7 @@
   "block.firstmod.magic_block": "Magic Block",
 
   "creativetab.firstmod.alexandrite_items": "Alexandrite Items",
-  "creativetab.firstmod.alexandrite_blocks": "Alexandrite Blocks"
+  "creativetab.firstmod.alexandrite_blocks": "Alexandrite Blocks",
+
+  "item.firstmod.aurora_ashes": "Aurora Ashes"
 }
