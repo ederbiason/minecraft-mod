@@ -17,5 +17,10 @@
   "creativetab.firstmod.alexandrite_items": "Alexandrite Items",
   "creativetab.firstmod.alexandrite_blocks": "Alexandrite Blocks",
 
-  "item.firstmod.aurora_ashes": "Aurora Ashes"
+  "item.firstmod.aurora_ashes": "Aurora Ashes",
+
+  "tooltip.firstmod.magic_block.tooltip": "This Block is quite §9MAGICAL§r",
+  "tooltip.firstmod.chisel.shift_down": "This item changes certain Blocks",
+  "tooltip.firstmod.chisel": "Press §eShift§r for more information!",
+  "tooltip.firstmod.profiterole": "This will fuel your energy like Mash Burnedead"
 }

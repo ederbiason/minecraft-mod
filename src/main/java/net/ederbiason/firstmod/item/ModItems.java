@@ -3,11 +3,16 @@ package net.ederbiason.firstmod.item;
 import net.ederbiason.firstmod.FirstMod;
 import net.ederbiason.firstmod.item.custom.ChiselItem;
 import net.ederbiason.firstmod.item.custom.FuelItem;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.List;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, FirstMod.MOD_ID);
@@ -20,7 +25,15 @@ public class ModItems {
 
     public static final RegistryObject<Item> KOHLRABI = ITEMS.register("kohlrabi", () -> new Item(new Item.Properties().food(ModFoodProperties.KOHLRABI)));
 
-    public static final RegistryObject<Item> PROFITEROLE = ITEMS.register("profiterole", () -> new Item(new Item.Properties().food(ModFoodProperties.PROFITEROLE)));
+    public static final RegistryObject<Item> PROFITEROLE = ITEMS.register("profiterole",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.PROFITEROLE)) {
+                @Override
+                public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+                    pTooltipComponents.add(Component.translatable("tooltip.firstmod.profiterole"));
+
+                    super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
+                }
+            });
 
     public static final RegistryObject<Item> AURORA_ASHES = ITEMS.register("aurora_ashes",
             () -> new FuelItem(new Item.Properties(), 1200));
